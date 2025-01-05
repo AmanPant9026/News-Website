@@ -16,7 +16,8 @@ const AdminDashboard = () => {
   };
 
   const logout = () => {
-    router.push('/admin-login');
+    localStorage.clear(); // Clear any stored data
+    router.push('/role-selection'); // Redirect to Role Selection
   };
 
   return (
