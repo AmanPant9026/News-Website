@@ -8,13 +8,13 @@ const Sidebar = () => {
     <aside className="bg-gray-900 text-gray-100 w-64 min-h-screen p-6 flex flex-col justify-between shadow-lg">
       {/* Logo Section */}
       <div>
-        <div className="flex items-center space-x-3 mb-8">
+        <div className="flex flex-col items-center mb-8">
           <img
             src="/logo.png"
             alt="Company Logo"
             className="w-14 h-14 rounded-full shadow-md"
           />
-          <h1 className="text-2xl font-extrabold text-purple-400">
+          <h1 className="text-2xl font-extrabold text-purple-400 mt-4 text-center">
             MyDashboard
           </h1>
         </div>
@@ -74,7 +74,7 @@ const Sidebar = () => {
           <button
             onClick={() => {
               localStorage.clear();
-              router.push('/role-selection'); // Redirect to Role Selection page
+              router.push('/role-selection');
             }}
             className="flex items-center w-full px-4 py-3 rounded-lg hover:bg-gray-800 hover:text-purple-400 transition-all"
           >
